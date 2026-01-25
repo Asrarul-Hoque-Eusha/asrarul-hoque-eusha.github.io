@@ -1,0 +1,31 @@
+<section id="about" class="section-spacing">
+  <div class="section-container" appFadeIn>
+    <app-section-header titleKey="about.title" />
+    <div class="card">
+      <div class="flex flex-col md:flex-row md:justify-between gap-6">
+        <!-- Summary on the left -->
+        <div class="flex-1">
+          <p class="text-lg text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+            {{ profile()?.summary }}
+          </p>
+        </div>
+
+        <!-- Location and Email on the right, stacked vertically -->
+        <div class="flex flex-col gap-4 md:border-l md:border-border-light md:dark:border-border-dark md:pl-6 md:min-w-[200px]">
+          <div>
+            <span class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Location</span>
+            <p class="font-medium text-text-primary-light dark:text-text-primary-dark">
+              {{ profile()?.location }}
+            </p>
+          </div>
+          <div>
+            <span class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Email</span>
+            <p class="font-medium text-text-primary-light dark:text-text-primary-dark">
+              {{ profile()?.email }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

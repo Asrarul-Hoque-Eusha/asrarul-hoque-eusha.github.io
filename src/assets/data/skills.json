@@ -1,0 +1,26 @@
+[
+  {
+    "category": "AI/ML",
+    "skills": ["LangGraph", "RAG", "Transformers", "NLP", "Computer Vision", "LLMs", "TensorFlow", "Pandas"]
+  },
+  {
+    "category": "Backend",
+    "skills": ["FastAPI", ".NET Core", "REST API", "MVC", "Clean Architecture", "CQRS", "Modular Monolith"]
+  },
+  {
+    "category": "Frontend",
+    "skills": ["Angular", "React", "Streamlit"]
+  },
+  {
+    "category": "Languages",
+    "skills": ["Python", "C#", "JavaScript", "TypeScript", "C/C++"]
+  },
+  {
+    "category": "Databases",
+    "skills": ["MS SQL", "MongoDB", "MySQL", "Chroma", "PostgreSQL"]
+  },
+  {
+    "category": "DevOps & Security",
+    "skills": ["Docker", "OAuth0", "KeyCloak", "CI/CD", "Git/GitHub", "OpenTelemetry"]
+  }
+]

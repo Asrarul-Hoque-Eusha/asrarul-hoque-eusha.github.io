@@ -1,0 +1,34 @@
+<div class="min-h-screen bg-background-light dark:bg-background-dark">
+  <main class="section-container py-12 md:py-20">
+    <!-- Header -->
+    <div class="mb-10">
+      <a routerLink="/" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-accent mb-4 inline-block">
+        ← Back to Home
+      </a>
+      <h1 class="text-3xl md:text-4xl font-bold text-text-primary-light dark:text-text-primary-dark">
+        Blog
+      </h1>
+      <p class="mt-2 text-text-secondary-light dark:text-text-secondary-dark">
+        Thoughts on software engineering, AI/ML, and technology
+      </p>
+    </div>
+
+    <!-- Tag Filter -->
+    <app-tag-filter
+      [tags]="tags()"
+      [activeTag]="activeTag()"
+      (tagSelected)="onTagSelect($event)"
+    />
+
+    <!-- Blog Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-8">
+      @for (blog of blogs(); track blog.id) {
+        <app-blog-card [blog]="blog" />
+      } @empty {
+        <p class="text-text-secondary-light dark:text-text-secondary-dark col-span-full text-center py-12">
+          No posts found for this tag.
+        </p>
+      }
+    </div>
+  </main>
+</div>

@@ -1,0 +1,135 @@
+<nav class="fixed top-0 left-0 right-0 z-50 h-[60px] bg-white dark:bg-surface-dark border-b border-border-light dark:border-border-dark">
+  <div class="section-container h-full flex items-center justify-between">
+    <!-- Logo/Name -->
+    <a
+      (click)="scrollTo('hero')"
+      class="text-lg font-bold text-text-primary-light dark:text-text-primary-dark cursor-pointer hover:text-accent transition-colors"
+    >
+      Portfolio
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex items-center gap-6">
+      @for (item of navItems; track item.label) {
+        @if (item.type === 'route') {
+          <a
+            [routerLink]="item.route"
+            routerLinkActive="text-accent"
+            class="text-sm font-medium cursor-pointer transition-colors text-text-secondary-light dark:text-text-secondary-dark hover:text-accent"
+          >
+            {{ item.label | translate }}
+          </a>
+        } @else {
+          <a
+            (click)="scrollTo(item.section!)"
+            class="text-sm font-medium cursor-pointer transition-colors"
+            [class.text-accent]="activeSection() === item.section"
+            [class.text-text-secondary-light]="activeSection() !== item.section"
+            [class.dark:text-text-secondary-dark]="activeSection() !== item.section"
+            [class.hover:text-accent]="activeSection() !== item.section"
+          >
+            {{ item.label | translate }}
+          </a>
+        }
+      }
+
+      <!-- Theme Toggle -->
+      <button
+        (click)="toggleTheme()"
+        class="p-2 rounded-lg hover:bg-surface-light dark:hover:bg-background-dark transition-colors"
+        aria-label="Toggle theme"
+      >
+        @if (theme() === 'light') {
+          <lucide-angular name="moon" [size]="20" class="text-text-secondary-light"></lucide-angular>
+        } @else {
+          <lucide-angular name="sun" [size]="20" class="text-text-secondary-dark"></lucide-angular>
+        }
+      </button>
+
+      <!-- Language Toggle -->
+      <button
+        (click)="toggleLanguage()"
+        class="p-2 rounded-lg hover:bg-surface-light dark:hover:bg-background-dark transition-colors flex items-center gap-1"
+        aria-label="Toggle language"
+      >
+        <lucide-angular name="globe" [size]="20" class="text-text-secondary-light dark:text-text-secondary-dark"></lucide-angular>
+        <span class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">
+          {{ currentLang() === 'en' ? 'EN' : 'BN' }}
+        </span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      (click)="toggleMobileMenu()"
+      class="md:hidden p-2 rounded-lg hover:bg-surface-light dark:hover:bg-background-dark transition-colors"
+      aria-label="Toggle menu"
+    >
+      @if (mobileMenuOpen()) {
+        <lucide-angular name="x" [size]="24" class="text-text-primary-light dark:text-text-primary-dark"></lucide-angular>
+      } @else {
+        <lucide-angular name="menu" [size]="24" class="text-text-primary-light dark:text-text-primary-dark"></lucide-angular>
+      }
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  @if (mobileMenuOpen()) {
+    <div class="md:hidden absolute top-[60px] left-0 right-0 bg-white dark:bg-surface-dark border-b border-border-light dark:border-border-dark shadow-lg">
+      <div class="section-container py-4 flex flex-col gap-2">
+        @for (item of navItems; track item.label) {
+          @if (item.type === 'route') {
+            <a
+              [routerLink]="item.route"
+              routerLinkActive="bg-accent text-white"
+              (click)="toggleMobileMenu()"
+              class="py-2 px-4 rounded-lg text-sm font-medium cursor-pointer transition-colors text-text-primary-light dark:text-text-primary-dark hover:bg-surface-light dark:hover:bg-background-dark"
+            >
+              {{ item.label | translate }}
+            </a>
+          } @else {
+            <a
+              (click)="scrollTo(item.section!); toggleMobileMenu()"
+              class="py-2 px-4 rounded-lg text-sm font-medium cursor-pointer transition-colors"
+              [class.bg-accent]="activeSection() === item.section"
+              [class.text-white]="activeSection() === item.section"
+              [class.text-text-primary-light]="activeSection() !== item.section"
+              [class.dark:text-text-primary-dark]="activeSection() !== item.section"
+              [class.hover:bg-surface-light]="activeSection() !== item.section"
+              [class.dark:hover:bg-background-dark]="activeSection() !== item.section"
+            >
+              {{ item.label | translate }}
+            </a>
+          }
+        }
+
+        <div class="flex items-center gap-4 pt-4 px-4 border-t border-border-light dark:border-border-dark mt-2">
+          <!-- Theme Toggle -->
+          <button
+            (click)="toggleTheme()"
+            class="p-2 rounded-lg hover:bg-surface-light dark:hover:bg-background-dark transition-colors"
+            aria-label="Toggle theme"
+          >
+            @if (theme() === 'light') {
+              <lucide-angular name="moon" [size]="20" class="text-text-secondary-light"></lucide-angular>
+            } @else {
+              <lucide-angular name="sun" [size]="20" class="text-text-secondary-dark"></lucide-angular>
+            }
+          </button>
+
+          <!-- Language Toggle -->
+          <button
+            (click)="toggleLanguage()"
+            class="p-2 rounded-lg hover:bg-surface-light dark:hover:bg-background-dark transition-colors flex items-center gap-1"
+            aria-label="Toggle language"
+          >
+            <lucide-angular name="globe" [size]="20" class="text-text-secondary-light dark:text-text-secondary-dark"></lucide-angular>
+            <span class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">
+              {{ currentLang() === 'en' ? 'EN' : 'BN' }}
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  }
+</nav>

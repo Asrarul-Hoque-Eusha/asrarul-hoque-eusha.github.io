@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      # Generate prerender routes and sitemap
+      - name: Generate prerender routes
+        run: node scripts/generate-prerender-routes.js
+
+      - name: Generate sitemap
+        run: node scripts/generate-sitemap.js
+
+      # Build with prerendering
+      - run: npm run build -- --configuration=production --base-href=/
+
+      - name: Copy index.html to 404.html
+        run: cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/portfolio/browser

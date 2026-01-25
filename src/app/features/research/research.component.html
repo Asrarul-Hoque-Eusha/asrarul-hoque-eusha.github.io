@@ -1,0 +1,57 @@
+<section id="research" class="section-spacing">
+  <div class="section-container" appFadeIn>
+    <app-section-header titleKey="research.title" />
+    <div class="space-y-6">
+      @for (research of researches(); track research.id) {
+        <div class="card">
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-accent/10 rounded-lg hidden md:block">
+              <lucide-angular name="book-open" [size]="24" class="text-accent"></lucide-angular>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold text-text-primary-light dark:text-text-primary-dark mb-2">
+                {{ research.title }}
+              </h3>
+              <p class="text-text-secondary-light dark:text-text-secondary-dark mb-4">
+                {{ research.summary }}
+              </p>
+
+              <!-- Techniques -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                @for (technique of research.techniques; track technique) {
+                  <span class="skill-tag text-xs">{{ technique }}</span>
+                }
+              </div>
+
+              <!-- Links -->
+              <div class="flex gap-4">
+                @if (research.links.paper) {
+                  <a
+                    [href]="research.links.paper"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-1 text-sm text-accent hover:underline"
+                  >
+                    <lucide-angular name="external-link" [size]="16"></lucide-angular>
+                    View Paper
+                  </a>
+                }
+                @if (research.links.code) {
+                  <a
+                    [href]="research.links.code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-1 text-sm text-accent hover:underline"
+                  >
+                    <lucide-angular name="github" [size]="16"></lucide-angular>
+                    View Code
+                  </a>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

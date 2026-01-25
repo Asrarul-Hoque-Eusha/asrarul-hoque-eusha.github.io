@@ -1,0 +1,38 @@
+<section id="certifications" class="section-spacing bg-background-light dark:bg-background-dark">
+  <div class="section-container" appFadeIn>
+    <app-section-header titleKey="certifications.title" />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      @for (cert of certifications(); track cert.id) {
+        <div class="card flex items-start gap-4">
+          <div class="p-3 bg-accent/10 rounded-lg">
+            <lucide-angular name="award" [size]="24" class="text-accent"></lucide-angular>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-lg font-semibold text-text-primary-light dark:text-text-primary-dark">
+                {{ cert.name }}
+              </h3>
+              <span class="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                {{ cert.date }}
+              </span>
+            </div>
+            <p class="text-text-secondary-light dark:text-text-secondary-dark mb-2">
+              {{ cert.provider }}
+            </p>
+            @if (cert.link) {
+              <a
+                [href]="cert.link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 text-sm text-accent hover:underline"
+              >
+                <lucide-angular name="external-link" [size]="14"></lucide-angular>
+                {{ 'certifications.viewCertificate' | translate }}
+              </a>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

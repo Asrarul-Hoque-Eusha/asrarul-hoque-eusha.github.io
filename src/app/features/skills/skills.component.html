@@ -1,0 +1,19 @@
+<section id="skills" class="section-spacing">
+  <div class="section-container" appFadeIn>
+    <app-section-header titleKey="skills.title" />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (category of skills(); track category.category) {
+        <div class="card">
+          <h3 class="text-lg font-semibold mb-4 text-text-primary-light dark:text-text-primary-dark">
+            {{ category.category }}
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            @for (skill of category.skills; track skill) {
+              <span class="skill-tag">{{ skill }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

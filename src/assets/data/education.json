@@ -1,0 +1,21 @@
+[
+  {
+    "id": "edu-1",
+    "degree": "B.Sc. in Computer Science and Engineering",
+    "institution": "Chittagong University of Engineering & Technology (CUET)",
+    "graduationYear": "2024",
+    "thesis": "Developing a Transformer-based Model for Bangla Voice Cloning - Developed a multispeaker dataset for TTS and employed phoneme embeddings, enabling accurate pronunciation of numbers"
+  },
+  {
+    "id": "edu-2",
+    "degree": "Higher Secondary Certificate (HSC), Science",
+    "institution": "Government Science College",
+    "graduationYear": "2018"
+  },
+  {
+    "id": "edu-3",
+    "degree": "Secondary School Certificate (SSC), Science",
+    "institution": "Baraitali High School",
+    "graduationYear": "2016"
+  }
+]

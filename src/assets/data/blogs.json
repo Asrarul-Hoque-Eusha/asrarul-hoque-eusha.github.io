@@ -1,0 +1,46 @@
+[
+  {
+    "id": "blog-1",
+    "slug": "building-rag-applications",
+    "title": "Building RAG Applications with LangGraph",
+    "summary": "A comprehensive guide to building production-ready RAG systems with LangGraph and vector databases.",
+    "coverImage": "./assets/images/blogs/rag-cover.jpg",
+    "date": "2025-01-15",
+    "tags": ["AI", "RAG", "LangGraph", "Python"],
+    "readTime": "8 min",
+    "contentFile": "./assets/data/blogs/building-rag-applications.json"
+  },
+  {
+    "id": "blog-2",
+    "slug": "transformer-models-guide",
+    "title": "Understanding Transformer Models: A Deep Dive",
+    "summary": "Exploring the architecture and mechanics behind transformer models that power modern AI systems.",
+    "coverImage": "./assets/images/blogs/transformer-cover.jpg",
+    "date": "2025-01-10",
+    "tags": ["AI", "Machine Learning", "Transformers", "Deep Learning"],
+    "readTime": "12 min",
+    "contentFile": "./assets/data/blogs/transformer-models-guide.json"
+  },
+  {
+    "id": "blog-3",
+    "slug": "clean-architecture-dotnet",
+    "title": "Clean Architecture in .NET Applications",
+    "summary": "Best practices for implementing clean architecture patterns in enterprise .NET applications.",
+    "coverImage": "./assets/images/blogs/dotnet-cover.jpg",
+    "date": "2025-01-05",
+    "tags": ["Backend", ".NET", "Architecture", "Clean Code"],
+    "readTime": "10 min",
+    "contentFile": "./assets/data/blogs/clean-architecture-dotnet.json"
+  },
+  {
+    "id": "blog-4",
+    "slug": "cloud-computing-under-water-datacenter",
+    "title": "Microsoft’s Underwater Datacenter: Future of Cloud and Edge Computing",
+    "summary": "Exploring Microsoft's innovative underwater data center project and its implications for edge computing.",
+    "coverImage": "./assets/images/blogs/ms-data-center.jpg",
+    "date": "2021-08-17",
+    "tags": ["Datacenter", "Cloud Computing", "Edge Computing"],
+    "readTime": "10 min",
+    "contentFile": "./assets/data/blogs/microsofts-under-water-datacenter.json"
+  }
+]

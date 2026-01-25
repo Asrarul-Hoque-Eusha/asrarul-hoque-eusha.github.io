@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cert-1",
+    "name": "Foundation: Introduction to LangGraph",
+    "provider": "LangChain",
+    "date": "Oct 2025",
+    "link": "https://academy.langchain.com/certificates/hvflvd6aec"
+  },
+  {
+    "id": "cert-2",
+    "name": "Supervised Machine Learning: Regression and Classification",
+    "provider": "Coursera",
+    "date": "May 2023",
+    "link": "https://www.coursera.org/account/accomplishments/verify/ZCCJUNLK9PKW"
+  },
+  {
+    "id": "cert-3",
+    "name": "Neural Networks and Deep Learning",
+    "provider": "Coursera",
+    "date": "Oct 2023",
+    "link": "https://www.coursera.org/account/accomplishments/verify/XMJ8NU877EKS"
+  },
+  {
+    "id": "cert-4",
+    "name": "Problem Solving (Basic) Certificate",
+    "provider": "HackerRank",
+    "date": "Dec 2023",
+    "link": "https://www.hackerrank.com/certificates/140c80da8299"
+  },
+  {
+    "id": "cert-5",
+    "name": "Introduction to Data Visualization",
+    "provider": "Simplilearn",
+    "date": "Dec 2024",
+    "link": "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxODEwIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvNzY4NDQ1OV83NTk0OTQ4MTczNDUzNjEwMzQzNC5wbmciLCJ1c2VybmFtZSI6IkFzcmFydWwgSG9xdWUgRXVzaGEifQ%3D%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4307%2FIntroduction-to-Data-Visualization%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1438382014136480001&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVdy8N8y72CvYrDEiyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAIHvVKNBAAAA"
+  },
+  {
+    "id": "cert-6",
+    "name": "Java (Basic) Certificate",
+    "provider": "HackerRank",
+    "date": "Oct 2024",
+    "link": "https://www.hackerrank.com/certificates/iframe/658815083a69"
+  }
+]

@@ -1,0 +1,164 @@
+::ng-deep .blog-content {
+  max-width: 100%;
+
+  markdown {
+    display: block;
+    max-width: 100%;
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+      @apply text-text-primary-light dark:text-text-primary-dark;
+    }
+
+    h3 {
+      font-size: 1.375rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+      @apply text-text-primary-light dark:text-text-primary-dark;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+      @apply text-text-primary-light dark:text-text-primary-dark;
+    }
+
+    a {
+      @apply text-accent hover:underline;
+    }
+
+    ul, ol {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+      text-align: justify;
+      @apply text-text-primary-light dark:text-text-primary-dark;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    blockquote {
+      border-left: 4px solid;
+      padding-left: 1.5rem;
+      font-style: italic;
+      margin: 2rem 0;
+      @apply border-accent text-text-secondary-light dark:text-text-secondary-dark;
+    }
+
+    code:not(pre code) {
+      padding: 0.125rem 0.375rem;
+      border-radius: 0.25rem;
+      font-size: 0.9375rem;
+      font-family: ui-monospace, monospace;
+      @apply bg-surface-light dark:bg-surface-dark text-accent;
+    }
+
+    pre {
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin: 2rem 0;
+      overflow-x: auto;
+      background-color: #1e293b;
+      font-size: 0.875rem;
+
+      code {
+        background: transparent;
+        padding: 0;
+        color: inherit;
+      }
+    }
+
+    img {
+      border-radius: 0.5rem;
+      margin: 2rem 0;
+      width: 100%;
+    }
+
+    figure {
+      margin: 2rem 0;
+
+      figcaption {
+        text-align: center;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+        @apply text-text-secondary-light dark:text-text-secondary-dark;
+      }
+    }
+
+    hr {
+      margin: 3rem 0;
+      @apply border-border-light dark:border-border-dark;
+    }
+
+    // Table wrapper for horizontal scroll (created by Angular)
+    .table-container {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 2rem 0;
+      border: 1px solid;
+      border-radius: 0.5rem;
+      @apply border-border-light dark:border-border-dark;
+
+      table {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 2rem 0;
+      border: 1px solid;
+      border-radius: 0.5rem;
+      @apply border-border-light dark:border-border-dark;
+
+      th, td {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        white-space: nowrap;
+        border: 1px solid;
+        @apply border-border-light dark:border-border-dark text-text-primary-light dark:text-text-primary-dark;
+      }
+
+      th {
+        font-weight: 600;
+        @apply bg-surface-light dark:bg-surface-dark;
+      }
+
+      tbody tr:nth-child(even) {
+        @apply bg-surface-light/50 dark:bg-surface-dark/50;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+      @apply text-text-primary-light dark:text-text-primary-dark;
+    }
+
+    em {
+      font-style: italic;
+    }
+  }
+}

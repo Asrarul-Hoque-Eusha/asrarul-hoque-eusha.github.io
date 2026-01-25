@@ -1,0 +1,30 @@
+<section id="education" class="section-spacing bg-surface-light dark:bg-surface-dark">
+  <div class="section-container" appFadeIn>
+    <app-section-header titleKey="education.title" />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      @for (edu of educations(); track edu.id) {
+        <div class="card">
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-accent/10 rounded-lg">
+              <lucide-angular name="graduation-cap" [size]="24" class="text-accent"></lucide-angular>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-semibold text-text-primary-light dark:text-text-primary-dark mb-1">
+                {{ edu.degree }}
+              </h3>
+              <p class="text-accent font-medium mb-1">{{ edu.institution }}</p>
+              <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-2">
+                {{ edu.graduationYear }}
+              </p>
+              @if (edu.thesis) {
+                <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark italic">
+                  Thesis: {{ edu.thesis }}
+                </p>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

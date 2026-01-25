@@ -1,0 +1,71 @@
+[
+  {
+    "id": "project-1",
+    "title": "Agile AI Development Pipeline (BMad-Stella)",
+    "description": "Engineered and customized an AI-driven agile development workflow built on top of IDEs like Claude Code, Cursor, and Antigravity. Integrates specialized agents including Product Owner, Planner, Developer, Tester, and Reviewer to streamline the entire software development lifecycle.",
+    "role": "Lead Developer",
+    "technologies": ["JavaScript", "NPM", "Claude Code", "AgentOS", "BMad-Method"],
+    "achievements": [
+      "Led R&D conducting comprehensive comparative analysis of leading AI copilot tools",
+      "Implemented BMad-Method agile AI-driven development workflow",
+      "Tailored solutions to meet specific client requirements and enhance project efficiency"
+    ],
+    "links": {}
+  },
+  {
+    "id": "project-2",
+    "title": "QuarryMind Chatbot",
+    "description": "Agentic RAG chatbot for Quarry Connect project, empowering a construction transportation company with critical data-driven insights and statistics.",
+    "role": "AI Developer",
+    "technologies": ["LangGraph", "FastAPI", "Microsoft SQL Server", "OpenAI", "React"],
+    "achievements": [
+      "Improved SQL generation accuracy and reduced query latency by 70% through optimized data pipeline design",
+      "Implemented human-in-the-loop feature for refining impactful query suggestions",
+      "Developed custom observability tools using OpenTelemetry for performance monitoring",
+      "Enhanced user experience with in-session memory for conversational continuity"
+    ],
+    "links": {}
+  },
+  {
+    "id": "project-3",
+    "title": "LEADRS RAG Chatbot",
+    "description": "Agentic RAG Chatbot revolutionizing user interaction with complex data through natural language queries. Enables informed decision-making across the organization.",
+    "role": "AI Developer",
+    "technologies": ["LangGraph", "FastAPI", "Streamlit", "Microsoft SQL Server", "OpenAI", "React", "FPDF2", "OpenPyXL"],
+    "achievements": [
+      "Reduced query latency by up to 90% through efficient GPT API call design",
+      "Cut operational costs by up to 80% using schema context handling and caching",
+      "Implemented custom checkpointer for conversational memory persistence",
+      "Developed bespoke observability tools on top of OpenTelemetry"
+    ],
+    "links": {}
+  },
+  {
+    "id": "project-4",
+    "title": "BoiPoka - Online Bookshop",
+    "description": "Full-featured online bookshop with role-based authentication, book management, cart and order handling, and checkout functionality.",
+    "role": "Full Stack Developer",
+    "technologies": [".NET Core", "C#", "Microsoft SQL Server", "ASP.NET Core Identity"],
+    "achievements": [
+      "Implemented role-based authentication and authorization",
+      "Built comprehensive book management system with search and filtering",
+      "Developed admin dashboard and user profile management",
+      "Designed seamless e-commerce checkout experience"
+    ],
+    "links": {}
+  },
+  {
+    "id": "project-5",
+    "title": "MemoVision",
+    "description": "Multimodal RAG-based system allowing image uploads, automatic tag generation, and image descriptions. Retrieves images based on text, image, or combined modality queries through a ChatBot interface.",
+    "role": "AI Developer",
+    "technologies": ["FastAPI", "Chroma", "CLIP Embedding", "React"],
+    "achievements": [
+      "Built multimodal retrieval using both vector search and text search",
+      "Implemented automatic image tagging and description generation",
+      "Developed ChatBot interface for natural language image queries",
+      "Architected complete application as a solo project"
+    ],
+    "links": {}
+  }
+]

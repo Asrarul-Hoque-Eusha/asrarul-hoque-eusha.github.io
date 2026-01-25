@@ -1,0 +1,15 @@
+{
+  "name": "Asrarul Hoque Eusha",
+  "title": "Software Engineer | Backend & AI/ML",
+  "summary": "Passionate software engineer with expertise in building scalable backend systems and AI/ML applications. Focused on creating efficient, maintainable solutions using modern technologies.",
+  "keywords": ["FastAPI", ".NET", "LangGraph", "React"],
+  "email": "asrar2860@gmail.com",
+  "location": "Dhaka, Bangladesh",
+  "resumeUrl": "/assets/resume.pdf",
+  "profileImage": "./assets/images/profile.png",
+  "social": {
+    "github": "https://github.com/Asrarul-Hoque-Eusha",
+    "linkedin": "https://linkedin.com/in/asrarul-hoque-eusha-a51438249",
+    "googleScholar": "https://scholar.google.com/citations?user=fv12E1sAAAAJ&hl=en&oi=ao"
+  }
+}

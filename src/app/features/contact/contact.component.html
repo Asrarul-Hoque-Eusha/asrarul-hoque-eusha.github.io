@@ -1,0 +1,174 @@
+<section id="contact" class="section-spacing bg-surface-light dark:bg-surface-dark">
+  <div class="section-container" appFadeIn>
+    <app-section-header titleKey="contact.title" />
+
+    <!-- CTA Text -->
+    <p class="text-xl text-text-secondary-light dark:text-text-secondary-dark mb-6 max-w-2xl">
+      {{ 'contact.cta' | translate }}
+    </p>
+
+    <!-- Two-column grid: 68% / 32% split -->
+    <div class="grid grid-cols-1 lg:grid-cols-[68%_32%] gap-8 items-start">
+      <!-- Left side - Contact Form (primary content) -->
+      <div>
+        <!-- Contact Form Card -->
+        <div class="card">
+          <h3 class="text-lg font-semibold text-text-primary-light dark:text-text-primary-dark mb-4">
+            Send a Message
+          </h3>
+
+          <form
+            [action]="'https://formsubmit.co/' + profile()?.email"
+            method="POST"
+            class="space-y-4"
+          >
+            <!-- Formsubmit config -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="subject" class="block text-sm font-medium text-text-primary-light dark:text-text-primary-dark mb-1">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="_subject"
+                  required
+                  class="w-full px-4 py-2.5 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark text-text-primary-light dark:text-text-primary-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors"
+                  placeholder="Subject of your message"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-text-primary-light dark:text-text-primary-dark mb-1">
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-2.5 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark text-text-primary-light dark:text-text-primary-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors"
+                  placeholder="your@email.com"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-text-primary-light dark:text-text-primary-dark mb-1">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="w-full px-4 py-2.5 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark text-text-primary-light dark:text-text-primary-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors resize-none"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+
+            <!-- Button left-aligned, email fallback below -->
+            <div class="space-y-4">
+              <button
+                type="submit"
+                class="btn-primary flex items-center gap-2"
+              >
+                <lucide-angular name="mail" [size]="18"></lucide-angular>
+                Send Message
+              </button>
+
+              <!-- Horizontal divider -->
+              <hr class="border-border-light dark:border-border-dark" />
+
+              <!-- Email fallback on new line, left-aligned -->
+              <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                Or email me directly at:
+                <a [href]="'mailto:' + profile()?.email" class="text-accent hover:underline ml-1">
+                  {{ profile()?.email }}
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right side - Quick Links & Social (secondary content) -->
+      <div class="flex flex-col gap-8 pt-6 lg:pt-0 border-t lg:border-t-0 lg:border-l border-border-light dark:border-border-dark lg:pl-8">
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-base font-semibold text-text-primary-light dark:text-text-primary-dark mb-2">
+            Quick Links
+          </h3>
+          <!-- Subtle divider under title -->
+          <div class="w-12 h-0.5 bg-border-light dark:bg-border-dark mb-4"></div>
+          <nav class="flex flex-wrap gap-x-6 gap-y-2 lg:flex-col lg:gap-2">
+            @for (link of sectionLinks; track link.section) {
+              <a
+                (click)="scrollTo(link.section)"
+                class="text-base text-text-secondary-light/80 dark:text-text-secondary-dark/80 hover:text-accent cursor-pointer transition-colors"
+              >
+                {{ link.label }}
+              </a>
+            }
+            <a
+              routerLink="/blog"
+              class="text-base text-text-secondary-light/80 dark:text-text-secondary-dark/80 hover:text-accent transition-colors"
+            >
+              Blog
+            </a>
+          </nav>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+          <h3 class="text-base font-semibold text-text-primary-light dark:text-text-primary-dark mb-2">
+            Stay Connected
+          </h3>
+          <!-- Subtle divider under title -->
+          <div class="w-12 h-0.5 bg-border-light dark:bg-border-dark mb-4"></div>
+          <!-- Icons with 14px gap (gap-3.5) and 44px hit area (p-2.5 + 20px icon) -->
+          <div class="flex items-center gap-3.5">
+            <a
+              [href]="profile()?.social?.github"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-11 h-11 flex items-center justify-center rounded-full bg-white dark:bg-background-dark border border-border-light dark:border-border-dark hover:border-accent hover:bg-surface-light dark:hover:bg-surface-dark transition-colors"
+              aria-label="GitHub"
+            >
+              <lucide-angular name="github" [size]="20" class="text-text-primary-light dark:text-text-primary-dark"></lucide-angular>
+            </a>
+            <a
+              [href]="profile()?.social?.linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-11 h-11 flex items-center justify-center rounded-full bg-white dark:bg-background-dark border border-border-light dark:border-border-dark hover:border-accent hover:bg-surface-light dark:hover:bg-surface-dark transition-colors"
+              aria-label="LinkedIn"
+            >
+              <lucide-angular name="linkedin" [size]="20" class="text-text-primary-light dark:text-text-primary-dark"></lucide-angular>
+            </a>
+            @if (profile()?.social?.googleScholar) {
+              <a
+                [href]="profile()?.social?.googleScholar"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-11 h-11 flex items-center justify-center rounded-full bg-white dark:bg-background-dark border border-border-light dark:border-border-dark hover:border-accent hover:bg-surface-light dark:hover:bg-surface-dark transition-colors"
+                aria-label="Google Scholar"
+              >
+                <lucide-angular name="graduation-cap" [size]="20" class="text-text-primary-light dark:text-text-primary-dark"></lucide-angular>
+              </a>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 text-center text-sm text-text-secondary-light dark:text-text-secondary-dark border-t border-border-light dark:border-border-dark">
+  <div class="section-container">
+    <p>&copy; {{ currentYear }} {{ profile()?.name }}. All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    @apply bg-background-light dark:bg-background-dark;
+    @apply text-text-primary-light dark:text-text-primary-dark;
+    @apply font-sans;
+    line-height: 1.6;
+    overflow-x: hidden; // Prevent horizontal page scroll
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-content mx-auto px-6 md:px-10;
+  }
+
+  .section-spacing {
+    @apply py-20 md:py-section;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-2.5 rounded-lg font-medium;
+    @apply hover:bg-blue-700 transition-colors duration-150;
+    @apply focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply border border-accent text-accent px-6 py-2.5 rounded-lg font-medium;
+    @apply hover:bg-accent hover:text-white transition-colors duration-150;
+    @apply focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white dark:bg-surface-dark;
+    @apply border border-border-light dark:border-border-dark;
+    @apply rounded-xl p-6 md:p-8;
+  }
+
+  .skill-tag {
+    @apply px-3 py-1.5 rounded-full text-sm font-medium;
+    @apply bg-surface-light dark:bg-background-dark;
+    @apply text-text-primary-light dark:text-text-primary-dark;
+    @apply border border-border-light dark:border-border-dark;
+  }
+}

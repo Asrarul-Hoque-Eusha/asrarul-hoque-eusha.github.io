@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "achievements": "Achievements",
+    "certifications": "Certifications",
+    "education": "Education",
+    "research": "Research",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "resumeBtn": "Resume",
+    "githubBtn": "GitHub",
+    "linkedinBtn": "LinkedIn",
+    "scholarBtn": "Scholar"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewCode": "View Code",
+    "liveDemo": "Live Demo"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "research": {
+    "title": "Research"
+  },
+  "achievements": {
+    "title": "Achievements"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "viewCertificate": "View Certificate"
+  },
+  "about": {
+    "title": "About Me"
+  },
+  "contact": {
+    "title": "Contact",
+    "cta": "Open to backend/ML roles. Let's connect!"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts on software engineering, AI/ML, and technology",
+    "backToHome": "Back to Home",
+    "backToBlog": "Back to Blog",
+    "relatedPosts": "Related Posts",
+    "share": "Share",
+    "noPostsFound": "No posts found for this tag."
+  }
+}

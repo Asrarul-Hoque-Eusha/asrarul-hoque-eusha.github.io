@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "skills": "দক্ষতা",
+    "projects": "প্রজেক্ট",
+    "experience": "অভিজ্ঞতা",
+    "achievements": "অর্জন",
+    "certifications": "সার্টিফিকেশন",
+    "education": "শিক্ষা",
+    "research": "গবেষণা",
+    "about": "আমার সম্পর্কে",
+    "contact": "যোগাযোগ",
+    "blog": "ব্লগ"
+  },
+  "hero": {
+    "greeting": "আমি",
+    "resumeBtn": "জীবনবৃত্তান্ত",
+    "githubBtn": "গিটহাব",
+    "linkedinBtn": "লিংকডইন",
+    "scholarBtn": "স্কলার"
+  },
+  "skills": {
+    "title": "দক্ষতা"
+  },
+  "projects": {
+    "title": "প্রজেক্ট",
+    "viewCode": "কোড দেখুন",
+    "liveDemo": "লাইভ ডেমো"
+  },
+  "experience": {
+    "title": "অভিজ্ঞতা",
+    "present": "বর্তমান"
+  },
+  "education": {
+    "title": "শিক্ষা"
+  },
+  "research": {
+    "title": "গবেষণা"
+  },
+  "achievements": {
+    "title": "অর্জন"
+  },
+  "certifications": {
+    "title": "সার্টিফিকেশন",
+    "viewCertificate": "সার্টিফিকেট দেখুন"
+  },
+  "about": {
+    "title": "আমার সম্পর্কে"
+  },
+  "contact": {
+    "title": "যোগাযোগ",
+    "cta": "ব্যাকএন্ড/ML পদের জন্য উন্মুক্ত। যোগাযোগ করুন!"
+  },
+  "blog": {
+    "title": "ব্লগ",
+    "subtitle": "সফটওয়্যার ইঞ্জিনিয়ারিং, AI/ML এবং প্রযুক্তি নিয়ে চিন্তাভাবনা",
+    "backToHome": "হোমে ফিরে যান",
+    "backToBlog": "ব্লগে ফিরে যান",
+    "relatedPosts": "সম্পর্কিত পোস্ট",
+    "share": "শেয়ার",
+    "noPostsFound": "এই ট্যাগের জন্য কোনো পোস্ট পাওয়া যায়নি।"
+  }
+}

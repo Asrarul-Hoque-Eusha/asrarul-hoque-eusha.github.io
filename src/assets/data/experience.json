@@ -1,0 +1,51 @@
+[
+  {
+    "id": "exp-1",
+    "organization": "Brain Station 23",
+    "role": "Software Engineer",
+    "startDate": "2025-07",
+    "endDate": "present",
+    "highlights": [
+      "Built Agentic RAG application for Legal and transportation systems facilitating data-driven decision making",
+      "Developed customized reporting solutions for special conditions",
+      "Engineered Agile Agentic AI Development pipeline on top of Claude Code"
+    ]
+  },
+  {
+    "id": "exp-2",
+    "organization": "Brain Station 23",
+    "role": "Software Engineer Trainee",
+    "startDate": "2025-03",
+    "endDate": "2025-06",
+    "highlights": [
+      "Built industry-standard projects using C# and .NET Core with architectural patterns: MVC, WebAPI, Layered Architecture, Clean Architecture, CQRS+MediatR",
+      "Implemented SSO with KeyCloak in an Angular ticketing project"
+    ]
+  },
+  {
+    "id": "exp-3",
+    "organization": "BJIT",
+    "role": "Trainee Software Engineer (AI/ML)",
+    "startDate": "2024-11",
+    "endDate": "2025-02",
+    "highlights": [
+      "Completed 4-month intensive training in Machine Learning covering Python, Linear Algebra, Probability, and Statistics",
+      "Studied core ML concepts: Supervised, Unsupervised, and Reinforcement Learning",
+      "Gained expertise in Deep Learning, NLP, Computer Vision, and Transformer-based models",
+      "Learned advanced topics: Large Language Models (LLMs), Retrieval-Augmented Generation (RAG)"
+    ]
+  },
+  {
+    "id": "exp-4",
+    "organization": "CUET NLP Lab",
+    "role": "Research Intern",
+    "startDate": "2023-11",
+    "endDate": "2024-06",
+    "highlights": [
+      "Conducted research in NLP under the supervision of Prof. Dr. Moshiul Hoque",
+      "Gained hands-on experience in developing ML models, fine-tuning Transformers, and experimenting with state-of-the-art architectures",
+      "Participated in three ML competitions, achieving top positions (1st, 3rd, etc.) in model development phases",
+      "Published system description papers in workshops under EACL"
+    ]
+  }
+]

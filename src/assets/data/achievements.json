@@ -1,0 +1,44 @@
+[
+  {
+    "id": "achievement-1",
+    "title": "CASE Hate Speech Detection - 1st Place",
+    "description": "1st out of 22 teams in CASE Hate Speech Detection during Climate Activism (Team: CUET_Binary_Hackers)",
+    "date": "2024",
+    "icon": "trophy"
+  },
+  {
+    "id": "achievement-2",
+    "title": "ICPC 2022 - Top 11%",
+    "description": "171st out of 1643 teams in ICPC Preliminary Contest 2022 (Team: CUET_RER)",
+    "date": "2022",
+    "icon": "award"
+  },
+  {
+    "id": "achievement-3",
+    "title": "ICPC 2023 - Honorable Mention",
+    "description": "237th out of 2400+ teams (top 10%) in ICPC Preliminary Contest 2023 with Honorable Mention (Team: CUET_RER)",
+    "date": "2023",
+    "icon": "award"
+  },
+  {
+    "id": "achievement-4",
+    "title": "Competitive Programming",
+    "description": "Solved 850+ problems across online judges. Max Rating: 1449 (LeetCode), 1222 Pupil (CodeForces), 1423 2-Star (CodeChef)",
+    "date": "2024",
+    "icon": "star"
+  },
+  {
+    "id": "achievement-5",
+    "title": "BUET BioMed Datathon",
+    "description": "10th, selected for stage round (Team: Scikit_Learners)",
+    "date": "2024",
+    "icon": "award"
+  },
+  {
+    "id": "achievement-6",
+    "title": "CASE Multimodal Hate Speech - 5th Place",
+    "description": "5th place in CASE Multimodal Hate Speech Detection (Team: CUET_Binary_Hackers)",
+    "date": "2024",
+    "icon": "trophy"
+  }
+]

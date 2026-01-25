@@ -1,0 +1,38 @@
+[
+  {
+    "id": "research-1",
+    "title": "Sentiment Analysis using Transformer-Based Models in Code-Mixed Tamil and Tulu",
+    "summary": "CUET_Binary_Hackers @ DravidianLangTech-EACL 2024: Research on sentiment analysis using transformer-based models for code-mixed and transliterated Tamil and Tulu languages.",
+    "techniques": ["Transformers", "NLP", "Sentiment Analysis", "Code-Mixed Text"],
+    "links": {
+      "paper": "https://aclanthology.org/2024.dravidianlangtech-1.0/"
+    }
+  },
+  {
+    "id": "research-2",
+    "title": "Hate and Offensive Language Detection in Telugu Code-Mixed Text",
+    "summary": "CUET_Binary_Hackers @ DravidianLangTech EACL 2024: Detection of hate and offensive language in Telugu code-mixed text using Sentence Similarity BERT.",
+    "techniques": ["BERT", "NLP", "Hate Speech Detection", "Sentence Similarity"],
+    "links": {
+      "paper": "https://aclanthology.org/2024.dravidianlangtech-1.0/"
+    }
+  },
+  {
+    "id": "research-3",
+    "title": "Hate Speech Event Detection and Stance in Climate Activism",
+    "summary": "CUET_Binary_Hackers @ ClimateActivism 2024: Comprehensive evaluation and superior performance of transformer-based models in hate speech event detection and stance classification.",
+    "techniques": ["Transformers", "NLP", "Hate Speech Detection", "Stance Classification"],
+    "links": {
+      "paper": "https://aclanthology.org/2024.case-1.0/"
+    }
+  },
+  {
+    "id": "research-4",
+    "title": "Fake News Detection in Malayalam Language",
+    "summary": "CUET_Binary_Hackers @ DravidianLangTech EACL 2024: Fake news detection in Malayalam language leveraging fine-tuned MuRIL BERT model.",
+    "techniques": ["MuRIL BERT", "NLP", "Fake News Detection", "Transfer Learning"],
+    "links": {
+      "paper": "https://aclanthology.org/2024.dravidianlangtech-1.0/"
+    }
+  }
+]

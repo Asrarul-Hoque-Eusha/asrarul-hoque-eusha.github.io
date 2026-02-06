@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    // Store the attempted path and redirect to index.html
+    sessionStorage.redirect = location.pathname;
+    location.replace('/');
+  </script>
+</head>
+<body>
+  <!-- Fallback for non-JS -->
+  <noscript>
+    <h1>Page Not Found</h1>
+    <p>Redirecting to homepage...</p>
+    <meta http-equiv="refresh" content="0; url=/" />
+  </noscript>
+</body>
+</html>
